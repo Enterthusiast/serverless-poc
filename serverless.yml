@@ -4,6 +4,12 @@ service: my-express-application
 
 custom:
   tableName: 'users-table-${self:provider.stage}'
+  dynamodb:
+    start:
+      port: 4300
+      migrate: true
+  serverless-offline:
+    port: 4400
 
 provider:
   name: aws
@@ -56,3 +62,7 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
         TableName: ${self:custom.tableName}
+
+plugins:
+  - serverless-dynamodb-local
+  - serverless-offline #serverless-offline needs to be last in the list

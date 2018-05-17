@@ -22,5 +22,9 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "serverless-http": "^1.5.5"
+  },
+  "devDependencies": {
+    "serverless-dynamodb-local": "^0.2.30",
+    "serverless-offline": "^3.23.0"
   }
 }
