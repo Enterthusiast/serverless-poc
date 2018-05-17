@@ -1,2 +1,12 @@
 # serverless-poc
-Following the https://serverless.com/blog/serverless-express-rest-api/ tutorial
+Following the tutorial: https://serverless.com/blog/serverless-express-rest-api/
+
+# offline
+````
+sls offline
+````
+
+# deploy
+````
+sls deploy
+````
