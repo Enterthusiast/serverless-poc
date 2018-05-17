@@ -1,0 +1,26 @@
+{
+  "name": "serverless-poc",
+  "version": "1.0.0",
+  "description": "Following the https://serverless.com/blog/serverless-express-rest-api/ tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enterthusiast/serverless-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enterthusiast/serverless-poc/issues"
+  },
+  "homepage": "https://github.com/Enterthusiast/serverless-poc#readme",
+  "keywords": [],
+  "dependencies": {
+    "aws-sdk": "^2.241.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "serverless-http": "^1.5.5"
+  }
+}
