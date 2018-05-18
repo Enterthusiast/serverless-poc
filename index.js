@@ -108,9 +108,15 @@ app.put('/users/:userId', function (req, res) {
     Key: {
       userId: userId,
     },
-    Item: {
-      name: name,
+    ProjectionExpression: '#n',
+    ExpressionAttributeNames: {
+      "#n": "name",
     },
+    UpdateExpression: 'set #n= :n',
+    ExpressionAttributeValues: {
+        ":n": name,
+    },
+    ReturnValues:"UPDATED_NEW"
   };
 
   dynamoDb.update(params, (error, result) => {
