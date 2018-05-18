@@ -36,14 +36,26 @@ functions:
     events:
       - http: ANY /
       - http: 'ANY {proxy+}'
-  getUser:
-    handler: index.handler
-    events:
-      - http: 'GET /users/{proxy+}'
   createUser:
     handler: index.handler
     events:
       - http: 'POST /users'
+  readUser:
+    handler: index.handler
+    events:
+      - http: 'GET /users/{proxy+}'
+  readUserList:
+    handler: index.handler
+    events:
+      - http: 'GET /users'
+  updateUser:
+    handler: index.handler
+    events:
+      - http: 'PUT /users/{proxy+}'
+  deleteUser:
+    handler: index.handler
+    events:
+      - http: 'DELETE /users/{proxy+}'
 
 resources:
   Resources:
