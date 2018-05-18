@@ -3,7 +3,7 @@ Following the tutorial: https://serverless.com/blog/serverless-express-rest-api/
 
 # offline
 ````
-sls offline
+sls offline start
 ````
 
 # deploy
